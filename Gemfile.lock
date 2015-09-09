@@ -87,6 +87,7 @@ GEM
       factory_girl (~> 4.5.0)
       railties (>= 3.0.0)
     fastercsv (1.5.5)
+    forgery (0.6.0)
     globalid (0.3.6)
       activesupport (>= 4.1.0)
     haml (4.0.7)
@@ -211,6 +212,7 @@ GEM
     thor (0.19.1)
     thread_safe (0.3.5)
     tilt (2.0.1)
+    timecop (0.8.0)
     token_authenticate_me (0.4.2)
       actionmailer (>= 3.2.0)
       actionpack
@@ -229,11 +231,13 @@ PLATFORMS
   ruby
 
 DEPENDENCIES
+  active_model_serializers (~> 0.8.0)
   annotate
   api_me
   brakeman
   byebug
   factory_girl_rails
+  forgery
   pg
   pry-byebug
   pry-rails
@@ -243,9 +247,10 @@ DEPENDENCIES
   rubocop
   sdoc (~> 0.4.0)
   squeel
+  timecop
   token_authenticate_me (>= 0.4.2)
   web-console (~> 2.0)
   wildland_dev_tools (>= 0.1.0)!
 
 BUNDLED WITH
-   1.10.4
+   1.10.5

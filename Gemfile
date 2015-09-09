@@ -34,6 +34,10 @@ end
 
 gem 'squeel'
 gem 'factory_girl_rails'
+gem 'forgery'
+gem 'timecop'
+gem 'active_model_serializers', '~>0.8.0'
+
 group :development, :test do
   gem 'wildland_dev_tools', '>=0.1.0', git: 'https://github.com/wildland/wildland_dev_tools.git'
   gem 'annotate'
