@@ -37,7 +37,6 @@
     "ember-data": "1.13.7",
     "ember-disable-proxy-controllers": "^1.0.0",
     "ember-export-application-global": "^1.0.3",
-    "ember-sanctify": "0.2.1",
-    "rails-csrf": "^2.0.1"
+    "ember-sanctify": "0.2.1"
   }
 }

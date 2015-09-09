@@ -2,6 +2,10 @@ require 'factory_girl'
 
   namespace :demo do
     task seed: :environment do
-      # Add any seed information here
+      FactoryGirl.create(:user,
+        username: 'admin',
+        email: 'admin@wild.land',
+        password: 'Password'
+      )
     end
   end
