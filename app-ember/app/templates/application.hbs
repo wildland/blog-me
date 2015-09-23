@@ -1,12 +1,12 @@
 <h1 id="title">Wordland</h1>
-<div>
+<nav class="navbar navbar-default navbar-fixed-top">
   {{#if isAuthenticated}}
     <span>{{currentUser.username}}</span>
     {{#link-to 'logout'}}<span id='logout' class="glyphicon glyphicon-log-out">Logout</span>{{/link-to}}
   {{else}}
     {{#link-to 'login'}}<span id='login' class="glyphicon glyphicon-log-in">Login</span>{{/link-to}}
   {{/if}}
-</div>
+</nav>
 <div class="container">
   {{outlet}}
 </div>

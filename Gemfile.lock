@@ -6,6 +6,12 @@ GIT
       rails (~> 4.1)
       rubocop (>= 0.33)
 
+PATH
+  remote: ../wildland_herd
+  specs:
+    wildland_herd (0.0.1)
+      rails (~> 4.2.4)
+
 GEM
   remote: https://rubygems.org/
   specs:
@@ -251,6 +257,7 @@ DEPENDENCIES
   token_authenticate_me (>= 0.4.2)
   web-console (~> 2.0)
   wildland_dev_tools (>= 0.1.0)!
+  wildland_herd!
 
 BUNDLED WITH
    1.10.5
