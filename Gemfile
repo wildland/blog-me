@@ -8,7 +8,7 @@ gem 'pg'
 # bundle exec rake doc:rails generates the API under doc/api.
 gem 'sdoc', '~> 0.4.0', group: :doc
 
-gem 'wildland_herd', path: '../wildland_herd'
+gem 'wildland_herd', git: 'https://github.com/wildland/herd.git'
 
 # Use ActiveModel has_secure_password
 # gem 'bcrypt', '~> 3.1.7'

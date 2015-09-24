@@ -1,16 +1,18 @@
 GIT
+  remote: https://github.com/wildland/herd.git
+  revision: faef5d695b13fec14c8def40eee68882c146f56e
+  specs:
+    wildland_herd (0.0.1)
+      rails (~> 4.2.4)
+      squeel
+
+GIT
   remote: https://github.com/wildland/wildland_dev_tools.git
   revision: b8a4551101f8291dc50405be90aae5f586fab922
   specs:
     wildland_dev_tools (0.1.1)
       rails (~> 4.1)
       rubocop (>= 0.33)
-
-PATH
-  remote: ../wildland_herd
-  specs:
-    wildland_herd (0.0.1)
-      rails (~> 4.2.4)
 
 GEM
   remote: https://rubygems.org/
