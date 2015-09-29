@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20150909184345) do
+ActiveRecord::Schema.define(version: 20150929175355) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
@@ -25,6 +25,32 @@ ActiveRecord::Schema.define(version: 20150909184345) do
   end
 
   add_index "articles", ["user_id"], name: "index_articles_on_user_id", using: :btree
+
+  create_table "organizations", force: :cascade do |t|
+    t.string   "name",       default: "", null: false
+    t.datetime "created_at",              null: false
+    t.datetime "updated_at",              null: false
+  end
+
+  create_table "permissions", force: :cascade do |t|
+    t.string   "name",             default: "",    null: false
+    t.integer  "role_id"
+    t.string   "permissible_type"
+    t.integer  "permissible_id"
+    t.boolean  "can_create",       default: false
+    t.boolean  "can_read",         default: false
+    t.boolean  "can_update",       default: false
+    t.boolean  "can_destroy",      default: false
+    t.datetime "created_at",                       null: false
+    t.datetime "updated_at",                       null: false
+  end
+
+  create_table "roles", force: :cascade do |t|
+    t.string   "name",            default: "", null: false
+    t.integer  "organization_id"
+    t.datetime "created_at",                   null: false
+    t.datetime "updated_at",                   null: false
+  end
 
   create_table "sessions", force: :cascade do |t|
     t.string   "key",        null: false
