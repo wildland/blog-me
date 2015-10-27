@@ -120,6 +120,7 @@ GEM
       pry (~> 0.10)
     pry-rails (0.3.4)
       pry (>= 0.9.10)
+    puma (2.14.0)
     pundit (1.0.1)
       activesupport (>= 3.0.0)
     rack (1.6.4)
@@ -237,6 +238,7 @@ DEPENDENCIES
   pg
   pry-byebug
   pry-rails
+  puma
   rails (~> 4.2.4)
   rails_12factor
   rspec-rails
@@ -248,4 +250,4 @@ DEPENDENCIES
   wildland_dev_tools (>= 0.1.0)!
 
 BUNDLED WITH
-   1.10.4
+   1.10.5
